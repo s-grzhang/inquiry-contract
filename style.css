@@ -1,0 +1,621 @@
+/* Audubon-styled CSS */
+:root {
+  --primary-color: #1f2d3d;
+  --secondary-color: #00857c;
+  --accent-color: #00a663;
+  --text-color: #333;
+  --light-text: #fff;
+  --border-color: #e5e5e5;
+  --link-color: #00857c;
+  --donate-color: #f78d1e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+/* Header styles */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  position: relative;
+}
+
+.logo h1 {
+  font-family: "Merriweather", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--light-text);
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li {
+  margin: 0 1rem;
+}
+
+.main-nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid var(--light-text);
+  color: var(--light-text);
+}
+
+.btn-donate {
+  background-color: var(--donate-color);
+  color: var(--light-text);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-donate:hover {
+  background-color: #e5810e;
+}
+
+/* Article container */
+.article-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.article-category {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-category span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.article-category span:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: var(--primary-color);
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+.article-header {
+  margin-bottom: 2rem;
+}
+
+.article-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.article-header .subtitle {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: normal;
+}
+
+.feature-image {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Author info */
+.article-meta {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eee;
+  margin-right: 1rem;
+}
+
+.author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.author-byline {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.author-title, .publish-date {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Article content */
+.article-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 1.5rem 0 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+blockquote {
+  border-left: 5px solid var(--secondary-color);
+  padding: 1rem 0 1rem 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+blockquote p {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+blockquote cite {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Image styling */
+.article-image {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-image figcaption {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Side-by-side image and text */
+.image-text-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.image-text-container.image-right {
+  flex-direction: row;
+}
+
+.image-text-container.image-left {
+  flex-direction: row-reverse;
+}
+
+.image-text-container .text-content {
+  flex: 1;
+}
+
+.image-text-container .image-content {
+  flex: 1;
+  max-width: 400px;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.image-content figcaption {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 3rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+/* Hero banner section */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 500px;
+  max-height: 800px;
+  overflow: hidden;
+  margin-bottom: 0;
+  background-color: var(--primary-color);
+}
+
+.merriweather-bold-700 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.7) 100%);
+  color: var(--light-text);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-credit {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.75rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 60vh;
+  }
+  
+  .hero-content {
+    padding: 0 10%;
+  }
+  
+  .hero-content h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .article-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .article-header .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  blockquote p {
+    font-size: 1.4rem;
+  }
+  
+  .image-text-container {
+    flex-direction: column !important;
+  }
+  
+  .image-text-container .image-content {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Conclusion section */
+.conclusion {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  font-style: italic;
+}
+
+.conclusion p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--primary-color);
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Birds in this story section */
+.birds-section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.birds-section h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.birds-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.bird-card {
+  width: 300px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  color: var(--light-text);
+}
+
+.bird-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.bird-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.bird-name {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.bird-family {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+.bird-audio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+}
+
+.audio-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.audio-button:hover {
+  opacity: 1;
+}
+
+.audio-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .birds-grid {
+    gap: 1rem;
+  }
+  
+  .bird-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
