@@ -39,8 +39,8 @@ This work also touches on a broader mission: connecting more people to birds mea
 
 ## Works Cited
 
-“Birds and Mammals.” King County, Washington, kingcounty.gov/en/dept/dnrp/nature-recreation/environment-ecology-conservation/wildlife/biodiversity/birds-and-mammals. Accessed 22 Apr. 2025. 
+“Birds and Mammals.” *King County, Washington,* kingcounty.gov/en/dept/dnrp/nature-recreation/environment-ecology-conservation/wildlife/biodiversity/birds-and-mammals. Accessed 22 Apr. 2025. 
 
 Kipps, Penelope. “Inquiry Contract Interview.” 19 Jan. 2025.
 
-Strycker, Noah. “How to Find A Bird.” Audubon, 22 Apr. 2025, www.audubon.org/magazine/how-find-bird. 
+Strycker, Noah. “How to Find A Bird.” *Audubon*, 22 Apr. 2025, www.audubon.org/magazine/how-find-bird. 
